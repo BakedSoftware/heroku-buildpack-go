@@ -85,6 +85,7 @@ PATH=$GOROOT/bin:$PATH
 
 
 if ! (test -d $build/Godeps)
+then
     if ! (which hg >/dev/null && which bzr >/dev/null) || [[ $CLEAN_VIRTUALENV == true ]]
     then
         echo
